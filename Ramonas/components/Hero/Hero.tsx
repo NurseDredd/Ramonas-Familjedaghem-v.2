@@ -38,7 +38,7 @@ export default function Hero() {
           {/* Content */}
           <div className="absolute inset-0 z-20 flex flex-col items-center justify-center px-4 text-center">
             {/* Play/Pause button */}
-            <div className="absolute top-5 right-5 z-30">
+            <div className="absolute top-4 right-4 z-30">
               <PlayPauseButton
                 isPlaying={isPlaying}
                 onClick={togglePlay}

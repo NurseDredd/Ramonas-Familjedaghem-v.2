@@ -10,7 +10,7 @@ export default function HamburgerMenu({ open, onClick }: HamburgerMenuProps) {
       aria-label="Huvudmeny"
       aria-expanded={open}
       aria-controls="main-nav"
-      className="md:hidden p-2 rounded-lg hover:bg-amber-50 focus:outline-none focus-visible:ring-2 ring-amber-500 transition-all duration-300"
+      className="md:hidden p-2 rounded-lg transition-all duration-300"
     >
       <div className="w-6 h-5 relative flex flex-col justify-between">
         <span
