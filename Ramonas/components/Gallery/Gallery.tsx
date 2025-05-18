@@ -5,7 +5,7 @@ import { useEffect, useState, useRef } from "react";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 import { images } from "./GalleryImage";
 
-const AUTOPLAY_DELAY = 5000; // 5 sekunder
+const AUTOPLAY_DELAY = 5000;
 
 export default function Gallery() {
   const [active, setActive] = useState(0);
@@ -16,7 +16,7 @@ export default function Gallery() {
 
   const nextImage = () => setActive((prev) => (prev + 1) % images.length);
 
-  // Autoplay-effect
+  // Autoplay
   useEffect(() => {
     intervalRef.current = setInterval(nextImage, AUTOPLAY_DELAY);
 
@@ -70,7 +70,7 @@ export default function Gallery() {
         {/* Controls */}
         <button
           type="button"
-          className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          className="absolute left-0 top-1/2 -translate-y-1/2 z-30 flex items-center justify-center px-4 cursor-pointer group focus:outline-none bg-transparent"
           onClick={prevImage}
           aria-label="Föregående bild"
         >
@@ -80,7 +80,7 @@ export default function Gallery() {
         </button>
         <button
           type="button"
-          className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          className=" absolute right-0 top-1/2 -translate-y-1/2 z-30 flex items-center justify-center px-4 cursor-pointer group focus:outline-none bg-transparent"
           onClick={nextImage}
           aria-label="Nästa bild"
         >

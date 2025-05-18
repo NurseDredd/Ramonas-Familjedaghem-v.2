@@ -53,7 +53,8 @@ const ActivitiesSection = () => {
           >
             <p className="text-gray-800 text-base leading-relaxed mb-4">
               Vi pysslar och skapar tillsammans – det blir en stund för
-              avkoppling, fantasi och fina samtal.
+              avkoppling, fantasi och fina samtal. Vi använder ofta
+              naturmaterial och återvunnet material
             </p>
             <p>
               Ibland stannar vi inne och skapar, ibland packar vi en väska med
@@ -99,6 +100,12 @@ const ActivitiesSection = () => {
                   <FaCheck aria-hidden="true" />
                 </p>
                 <span>Biblioteksbesök varje månad</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <p className="text-[#E6B8AF] text-xl">
+                  <FaCheck aria-hidden="true" />
+                </p>
+                <span>Teater och museibesök</span>
               </li>
               <li className="flex items-center gap-2">
                 <p className="text-[#E6B8AF] text-xl">
