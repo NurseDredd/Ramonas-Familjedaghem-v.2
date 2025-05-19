@@ -2,7 +2,7 @@ import React from "react";
 
 const USPSection = () => {
   return (
-    <section className="py-16 px-6 bg-amber-50">
+    <section className="py-8 px-6 bg-amber-50">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-2xl md:text-2xl font-semibold text-center mb-10 text-amber-900">
           Fördelar med familjedaghem

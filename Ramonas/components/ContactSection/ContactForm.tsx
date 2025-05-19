@@ -158,7 +158,7 @@ export default function ContactForm() {
           href="https://www.huddinge.se/forskola-skola/forskola/ansok-forskola/forskoleplats/#Innan-du-ansoker"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-full inline-block px-6 py-3 bg-white text-gray-800 font-medium rounded-lg shadow-md hover:bg-gray-50 transition-colors duration-200 hover:shadow-lg border-2 border-amber-600"
+          className="w-full inline-block px-6 py-3 bg-white text-gray-800 font-medium rounded-lg shadow-md hover:border-amber-700 transition-colors duration-200 hover:shadow-lg border-2 border-amber-600"
         >
           Ansök via kommunens hemsida →
         </a>

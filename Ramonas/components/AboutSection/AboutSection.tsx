@@ -30,7 +30,7 @@ export default function AboutSection() {
     <motion.section
       id="about"
       {...animation}
-      className="bg-white max-w-6xl mx-auto py-16 px-6 scroll-mt-32"
+      className="bg-white max-w-6xl mx-auto py-8 px-6 scroll-mt-20 md:scroll-mt-32"
     >
       <h2 className="text-3xl font-semibold text-amber-700 mb-6">
         Om Ramonas familjedaghem
@@ -86,7 +86,7 @@ export default function AboutSection() {
           href="https://www.huddinge.se/forskola-skola/forskola/ansok-forskola/forskoleplats/#Innan-du-ansoker"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-6 py-3 bg-white text-gray-800 font-medium rounded-lg shadow-md hover:bg-gray-50 transition-colors duration-200 hover:shadow-lg border-2 border-amber-600"
+          className="inline-block px-6 py-3 bg-white text-gray-800 font-medium rounded-lg shadow-md hover:border-amber-700 transition-colors duration-200 hover:shadow-lg border-2 border-amber-600"
         >
           Ansök via kommunens hemsida →
         </a>

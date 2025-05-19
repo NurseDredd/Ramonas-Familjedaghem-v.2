@@ -19,7 +19,7 @@ export const images: GalleryImage[] = [
   {
     src: "/lekrum.webp",
     alt: "Lekrum med leksaker",
-    caption: "Vårt mysiga lekrum",
+    caption: "Vårt fina lekrum",
   },
   {
     src: "/brio.webp",
@@ -45,11 +45,11 @@ export const images: GalleryImage[] = [
   {
     src: "/perler.webp",
     alt: "Pärlor i olika färger",
-    caption: "Kreativ lek med pärlor",
+    caption: "Lägga pärlplattor",
   },
   {
     src: "/odlingslott.webp",
     alt: "Odlingslott",
-    caption: "Vattna, skörda eller plantera i odlingslotten",
+    caption: "Plantera, vattna eller skörda i odlingslotten",
   },
 ];

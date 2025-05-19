@@ -12,7 +12,7 @@ export default function ScheduleGallerySection() {
     <motion.section
       {...animation}
       id="schedule"
-      className="bg-amber-50 py-16 scroll-mt-24"
+      className="bg-amber-50 py-8 scroll-mt-20 md:scroll-mt-32"
     >
       <h2 className="text-center text-[#2F3E37] text-2xl font-semibold mb-8">
         En vanlig dag hos oss

@@ -10,12 +10,8 @@ const FoodSection = () => {
   return (
     <motion.section
       id="food"
-      className="relative py-16 px-6 scroll-mt-24"
-      ref={animation.ref}
-      initial={animation.initial}
-      animate={animation.animate}
-      variants={animation.variants}
-      transition={animation.transition}
+      className="relative py-8 px-6 scroll-mt-20 md:scroll-mt-32"
+      {...animation}
     >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -31,15 +27,8 @@ const FoodSection = () => {
             />
           </div>
 
-          {/* Textsektion */}
-          <motion.article
-            ref={animation.ref}
-            initial={animation.initial}
-            animate={animation.animate}
-            variants={animation.variants}
-            transition={animation.transition}
-            className="flex flex-col justify-center p-6 bg-white rounded-lg"
-          >
+          {/* Text section */}
+          <article className="flex flex-col justify-center p-6 bg-white rounded-lg">
             <h2 className="text-2xl font-semibold text-amber-700 mb-4">
               God och näringsrik kost
             </h2>
@@ -62,7 +51,7 @@ const FoodSection = () => {
                 också tillsammans, framförallt vid högtider som jul.
               </p>
             </div>
-          </motion.article>
+          </article>
         </div>
       </div>
     </motion.section>

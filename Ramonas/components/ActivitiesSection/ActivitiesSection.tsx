@@ -16,16 +16,11 @@ const ActivitiesSection = () => {
   const animation = useScrollAnimation();
 
   return (
-    <motion.section
+    <section
       id="activities"
-      ref={animation.ref}
-      initial={animation.initial}
-      animate={animation.animate}
-      variants={animation.variants}
-      transition={animation.transition}
-      className="bg-[#e4ede8] py-16 px-6 scroll-mt-24"
+      className="bg-[#e4ede8] py-8 px-6 scroll-mt-20 md:scroll-mt-32"
     >
-      <article className="max-w-7xl mx-auto text-center">
+      <motion.article className="max-w-7xl mx-auto text-center" {...animation}>
         <h2 className="text-2xl font-semibold mb-10 text-[#2F3E37]">
           Aktiviteter och utflykter
         </h2>
@@ -116,8 +111,8 @@ const ActivitiesSection = () => {
             </ul>
           </ActivityCard>
         </div>
-      </article>
-    </motion.section>
+      </motion.article>
+    </section>
   );
 };
 

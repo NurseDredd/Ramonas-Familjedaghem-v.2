@@ -62,9 +62,7 @@ export default function Gallery() {
 
         {/* Caption */}
         <figcaption className="absolute bottom-0 left-0 right-0 p-3 bg-white/90 z-30">
-          <p className="text-center text-gray-600 italic font-serif text-base">
-            {images[active].caption}
-          </p>
+          <p className="text-center text-gray-600">{images[active].caption}</p>
         </figcaption>
 
         {/* Controls */}
