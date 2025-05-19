@@ -29,8 +29,6 @@ const FoodSection = () => {
               priority
               sizes="(max-width: 768px) 100vw, 50vw"
             />
-            {/* Overlay mobilvy */}
-            <div className="absolute inset-0 bg-white/70 md:hidden" />
           </div>
 
           {/* Textsektion */}
@@ -40,7 +38,7 @@ const FoodSection = () => {
             animate={animation.animate}
             variants={animation.variants}
             transition={animation.transition}
-            className="flex flex-col justify-center p-6 bg-white rounded-lg shadow-md"
+            className="flex flex-col justify-center p-6 bg-white rounded-lg"
           >
             <h2 className="text-2xl font-semibold text-amber-700 mb-4">
               God och näringsrik kost

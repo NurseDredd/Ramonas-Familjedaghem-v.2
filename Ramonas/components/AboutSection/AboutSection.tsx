@@ -22,7 +22,7 @@ export default function AboutSection() {
     {
       title: "Föräldrasamverkan",
       content:
-        "En viktig del av verksamheten är föräldrasamverkan. Vid lämning och hämtning har vi möjlighet att samtala om barnets vistelse. Jag erbjuder längre samtal vid frågor och funderingar om så önskas. Inskolning sker tillsammans med föräldrar så barn och föräldrar känner sig trygga, och utvecklingssamtal sker en gång per termin.",
+        "Vid lämning och hämtning har vi möjlighet att samtala om barnets vistelse hos mig. Jag erbjuder längre samtal vid frågor och funderingar om så önskas. Inskolning sker tillsammans med föräldrar så barn och föräldrar känner sig trygga. Utvecklingssamtal sker en gång per termin.",
     },
   ];
 
@@ -81,14 +81,14 @@ export default function AboutSection() {
           {showMore ? "Visa mindre" : "Läs mer"}
         </button>
       </article>
-      <div className="mt-6 border-t border-gray-200 pt-4">
+      <div className="mt-6 border-t border-gray-200 pt-6 text-center md:text-left">
         <a
           href="https://www.huddinge.se/forskola-skola/forskola/ansok-forskola/forskoleplats/#Innan-du-ansoker"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-amber-700 underline hover:text-amber-800"
+          className="inline-block px-6 py-3 bg-white text-gray-800 font-medium rounded-lg shadow-md hover:bg-gray-50 transition-colors duration-200 hover:shadow-lg border-2 border-amber-600"
         >
-          Gå till ansökan via kommunens hemsida →
+          Ansök via kommunens hemsida →
         </a>
       </div>
     </motion.section>
