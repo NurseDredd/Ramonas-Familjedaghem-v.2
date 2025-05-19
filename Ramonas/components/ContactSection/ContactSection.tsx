@@ -6,6 +6,7 @@ import ContactMap from "./ContactMap";
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { HiMail, HiPhone } from "react-icons/hi";
+import { FaFacebook } from "react-icons/fa";
 
 export const ContactSection = () => {
   const [isClient, setIsClient] = useState(false);
@@ -28,7 +29,7 @@ export const ContactSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           <div className="ContactContent bg-white p-4 md:p-8 rounded-lg shadow-md">
             <h3 className="text-xl md:text-2xl font-bold mb-4">Kontakt</h3>
-            <div className="flex flex-col md:flex-row md:gap-4 mb-6">
+            <div className="flex flex-col gap-2 md:flex-row md:gap-4 mb-6">
               <p className="flex items-center gap-2 break-all">
                 <HiMail className="h-5 w-5" aria-hidden="true" />
                 <a
@@ -44,7 +45,25 @@ export const ContactSection = () => {
                   070-123 45 67
                 </a>
               </p>
+              <a
+                href="https://www.facebook.com/DIN-FACEBOOK-SIDA"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Besök oss på Facebook"
+                className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors"
+              >
+                <FaFacebook className="w-5 h-5 text-black" aria-hidden="true" />
+                <span className="sr-only">Facebook</span>
+              </a>
             </div>
+            <div className="mb-8">
+              <h4 className="text-lg font-bold mb-2">Öppettider:</h4>
+              <p>
+                Öppettiderna anpassas utifrån barnens vistelsetid, inom
+                tidsintervallet 06.30–18.00.
+              </p>
+            </div>
+
             <ContactMap />
           </div>
           {isClient && <ContactForm />}

@@ -8,10 +8,22 @@ export default function AboutSection() {
   const animation = useScrollAnimation();
   const [showMore, setShowMore] = useState(false);
 
-  const extraParagraphs = [
+  const regularParagraphs = [
     "Verksamheten passar dig som önskar en liten barngrupp och en trygg, familjär miljö. Jag ser varje barns unika behov och ger dem tid och utrymme att växa.",
-    "Vi samarbetar med Tamaras familjedaghem i Sätra. Tillsammans gör vi utflykter, leker och arbetar med olika projekt. Tamara fungerar även som vikarie, vilket skapar kontinuitet för barnen.",
-    "Mitt mål är att varje barn ska känna sig glad, sedd och välkommen – varje dag.",
+    "Mitt mål är att skapa en trygg barngrupp med modiga, empatiska och nyfikna individer med bra självkänsla för fortsatt lärande.",
+  ];
+
+  const sectionsWithHeadings = [
+    {
+      title: "Samarbete med andra familjedaghem",
+      content:
+        "Vi har ett nära samarbete med Tamaras familjedaghem i Sätra. Vi ses två till tre gånger i veckan tillsammans med andra familjedaghem som också finns i Sätra. Tillsammans gör vi utflykter, leker och arbetar med olika projekt. Tamara fungerar även som vikarie, vilket skapar kontinuitet för barnen.",
+    },
+    {
+      title: "Föräldrasamverkan",
+      content:
+        "En viktig del av verksamheten är föräldrasamverkan. Vid lämning och hämtning har vi möjlighet att samtala om barnets vistelse. Jag erbjuder längre samtal vid frågor och funderingar om så önskas. Inskolning sker tillsammans med föräldrar så barn och föräldrar känner sig trygga, och utvecklingssamtal sker en gång per termin.",
+    },
   ];
 
   return (
@@ -29,7 +41,8 @@ export default function AboutSection() {
           Ramonas familjedaghem i Masmo/Huddinge ligger bara ett stenkast från
           både buss och tunnelbana. Här tas barnen om hand av mig, Ramona –
           utbildad barnskötare med lång erfarenhet från både förskola och
-          familjedaghem. I mitt hem erbjuder jag en trygg och personlig
+          familjedaghem. Bostaden har fina och rymliga rum som lockar till lek
+          och skapande verksamhet. Här erbjuder jag en trygg och personlig
           barnomsorg för upp till sex barn i åldrarna 1–5 år.
         </p>
 
@@ -37,14 +50,24 @@ export default function AboutSection() {
         <div
           id="about-more"
           className={`
-              space-y-4
+              space-y-6
               ${showMore ? "block" : "hidden"}
               md:block
             `}
         >
-          <h3 className="sr-only">Mer information om verksamheten</h3>
-          {extraParagraphs.map((text, index) => (
+          {/* Regular paragraphs */}
+          {regularParagraphs.map((text, index) => (
             <p key={index}>{text}</p>
+          ))}
+
+          {/* Sections with headings */}
+          {sectionsWithHeadings.map((section, index) => (
+            <div key={index} className="space-y-2">
+              <h3 className="text-xl font-semibold text-amber-700">
+                {section.title}
+              </h3>
+              <p>{section.content}</p>
+            </div>
           ))}
         </div>
 
@@ -58,6 +81,16 @@ export default function AboutSection() {
           {showMore ? "Visa mindre" : "Läs mer"}
         </button>
       </article>
+      <div className="mt-6 border-t border-gray-200 pt-4">
+        <a
+          href="https://www.huddinge.se/forskola-skola/forskola/ansok-forskola/forskoleplats/#Innan-du-ansoker"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-amber-700 underline hover:text-amber-800"
+        >
+          Gå till ansökan via kommunens hemsida →
+        </a>
+      </div>
     </motion.section>
   );
 }
